@@ -1,0 +1,152 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="card shadow-lg result-card">
+
+        <div class="card-header bg-primary text-white text-center">
+
+            <h2>
+
+                Prediction Result
+
+            </h2>
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="text-center">
+
+                {% if prediction=="Approved" %}
+
+                    <h1 class="text-success">
+
+                        ✅ CREDIT CARD APPROVED
+
+                    </h1>
+
+                {% else %}
+
+                    <h1 class="text-danger">
+
+                        ❌ CREDIT CARD REJECTED
+
+                    </h1>
+
+                {% endif %}
+
+                <p class="lead mt-3">
+
+                    {{ message }}
+
+                </p>
+
+            </div>
+
+            <hr>
+
+            <h4 class="text-center">
+
+                Confidence Score
+
+            </h4>
+
+            <div class="progress mb-3">
+
+                <div class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: {{ confidence }}%;"
+                    aria-valuenow="{{ confidence }}"
+                    aria-valuemin="0"
+                    aria-valuemax="100">
+
+                    {{ confidence }} %
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h4 class="text-primary">
+
+                Applicant Summary
+
+            </h4>
+
+            <table class="table table-bordered">
+
+                <tr>
+                    <th>Gender</th>
+                    <td>{{ form.CODE_GENDER }}</td>
+                </tr>
+
+                <tr>
+                    <th>Annual Income</th>
+                    <td>₹ {{ form.AMT_INCOME_TOTAL }}</td>
+                </tr>
+
+                <tr>
+                    <th>Income Type</th>
+                    <td>{{ form.NAME_INCOME_TYPE }}</td>
+                </tr>
+
+                <tr>
+                    <th>Education</th>
+                    <td>{{ form.NAME_EDUCATION_TYPE }}</td>
+                </tr>
+
+                <tr>
+                    <th>Occupation</th>
+                    <td>{{ form.OCCUPATION_TYPE }}</td>
+                </tr>
+
+                <tr>
+                    <th>Employment Years</th>
+                    <td>{{ form.EMPLOYMENT_YEARS }}</td>
+                </tr>
+
+            </table>
+
+            <div class="alert alert-info mt-4">
+
+                <h5>
+
+                    Model Used
+
+                </h5>
+
+                <p class="mb-0">
+
+                    <strong>Random Forest Classifier</strong>
+
+                    <br>
+
+                    Model Accuracy :
+                    <strong>88.97%</strong>
+
+                </p>
+
+            </div>
+
+            <div class="text-center mt-4">
+
+                <a href="/predict"
+                   class="btn btn-primary btn-lg">
+
+                    Predict Another Applicant
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

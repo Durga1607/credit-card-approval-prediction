@@ -1,0 +1,349 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="text-center mb-5">
+
+        <h1 class="text-primary fw-bold">
+
+            About The Project
+
+        </h1>
+
+        <p class="lead">
+
+            Machine Learning Based Credit Card Approval Prediction System
+
+        </p>
+
+    </div>
+
+    <!-- Project Overview -->
+
+    <div class="card shadow mb-4">
+
+        <div class="card-header bg-primary text-white">
+
+            <h3>
+
+                <i class="bi bi-info-circle-fill"></i>
+
+                Project Overview
+
+            </h3>
+
+        </div>
+
+        <div class="card-body">
+
+            <p>
+
+                The Credit Card Approval Prediction System is a Machine Learning
+                web application that predicts whether a customer's credit card
+                application is likely to be approved or rejected.
+
+                The application helps financial institutions automate the
+                screening process by analyzing applicant demographic,
+                employment and financial information.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Problem Statement -->
+
+    <div class="card shadow mb-4">
+
+        <div class="card-header bg-danger text-white">
+
+            <h3>
+
+                <i class="bi bi-exclamation-triangle-fill"></i>
+
+                Problem Statement
+
+            </h3>
+
+        </div>
+
+        <div class="card-body">
+
+            <p>
+
+                Manual verification of credit card applications is time
+                consuming and may lead to inconsistent decisions.
+                Machine Learning enables banks to quickly evaluate
+                applications based on historical data and improve
+                decision making.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Workflow -->
+
+    <div class="card shadow mb-4">
+
+        <div class="card-header bg-success text-white">
+
+            <h3>
+
+                <i class="bi bi-diagram-3-fill"></i>
+
+                System Workflow
+
+            </h3>
+
+        </div>
+
+        <div class="card-body text-center">
+
+            <h5>
+
+                User Input
+
+                →
+
+                Data Preprocessing
+
+                →
+
+                Feature Engineering
+
+                →
+
+                Random Forest Model
+
+                →
+
+                Prediction
+
+                →
+
+                Result
+
+            </h5>
+
+        </div>
+
+    </div>
+
+    <!-- Dataset -->
+
+    <div class="card shadow mb-4">
+
+        <div class="card-header bg-warning">
+
+            <h3>
+
+                <i class="bi bi-database-fill"></i>
+
+                Dataset Information
+
+            </h3>
+
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-bordered">
+
+                <tr>
+
+                    <th>Application Records</th>
+
+                    <td>438,557</td>
+
+                </tr>
+
+                <tr>
+
+                    <th>Credit Records</th>
+
+                    <td>1,048,575</td>
+
+                </tr>
+
+                <tr>
+
+                    <th>Dataset Source</th>
+
+                    <td>Kaggle</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- Algorithms -->
+
+    <div class="card shadow mb-4">
+
+        <div class="card-header bg-info text-white">
+
+            <h3>
+
+                <i class="bi bi-cpu-fill"></i>
+
+                Machine Learning Algorithms
+
+            </h3>
+
+        </div>
+
+        <div class="card-body">
+
+            <ul>
+
+                <li>Logistic Regression</li>
+
+                <li>Decision Tree</li>
+
+                <li>Random Forest</li>
+
+                <li>XGBoost</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Model Comparison -->
+
+    <div class="card shadow mb-4">
+
+        <div class="card-header bg-secondary text-white">
+
+            <h3>
+
+                <i class="bi bi-bar-chart-fill"></i>
+
+                Model Comparison
+
+            </h3>
+
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-striped table-bordered">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Algorithm</th>
+
+                        <th>Accuracy</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Logistic Regression</td>
+
+                        <td>--</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Decision Tree</td>
+
+                        <td>--</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Random Forest</td>
+
+                        <td><strong>88.97%</strong></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>XGBoost</td>
+
+                        <td>--</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- Technology Stack -->
+
+    <div class="card shadow">
+
+        <div class="card-header bg-dark text-white">
+
+            <h3>
+
+                <i class="bi bi-code-slash"></i>
+
+                Technology Stack
+
+            </h3>
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="row text-center">
+
+                <div class="col-md-3">
+
+                    <h5>Python</h5>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <h5>Flask</h5>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <h5>Scikit-learn</h5>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <h5>Bootstrap 5</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

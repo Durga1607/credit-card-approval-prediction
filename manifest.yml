@@ -1,0 +1,5 @@
+applications:
+- name: credit-card-approval-prediction
+  memory: 512M
+  instances: 1
+  random-route: true

@@ -1,0 +1,161 @@
+/* ============================================================
+   Credit Card Approval Prediction System
+============================================================ */
+
+body{
+
+    background:#eef3fb;
+
+    font-family:'Segoe UI',sans-serif;
+
+}
+
+
+/* Navbar */
+
+.navbar{
+
+    background:linear-gradient(90deg,#0056b3,#0d6efd);
+
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+}
+
+
+/* Hero */
+
+.hero{
+
+    padding:70px 0;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    font-weight:bold;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+}
+
+
+/* Cards */
+
+.card{
+
+    border:none;
+
+    border-radius:20px;
+
+    transition:.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/* Statistics */
+
+.stats{
+
+    text-align:center;
+
+}
+
+.stats h2{
+
+    color:#0d6efd;
+
+    font-size:45px;
+
+}
+
+.stats p{
+
+    font-size:18px;
+
+}
+
+
+/* Buttons */
+
+.btn{
+
+    border-radius:10px;
+
+    padding:10px 30px;
+
+}
+
+
+/* Prediction Form */
+
+.form-control,
+
+.form-select{
+
+    border-radius:10px;
+
+}
+
+
+/* Result */
+
+.result-card{
+
+    border-radius:20px;
+
+}
+
+
+/* Footer */
+
+footer{
+
+    background:#212529;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:70px;
+
+}
+
+
+/* Progress Bar */
+
+.progress{
+
+    height:30px;
+
+    border-radius:20px;
+
+}
+
+
+/* Icons */
+
+.bi{
+
+    margin-right:8px;
+
+}

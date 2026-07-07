@@ -4,7 +4,7 @@
 
 The Credit Card Approval Prediction System is a Machine Learning web application that predicts whether a credit card application is likely to be approved or rejected based on the applicant's financial and demographic information.
 
-The project automates the screening process by reducing manual effort and providing fast, data-driven predictions.
+The project automates the preliminary screening process by reducing manual effort and providing fast, data-driven predictions through a user-friendly web interface.
 
 ---
 
@@ -16,16 +16,19 @@ The project automates the screening process by reducing manual effort and provid
 - Interactive User Interface
 - Confidence Score
 - Applicant Summary
-- IBM Cloud Deployment Ready
+- Data Preprocessing and Feature Engineering
+- Cloud Deployment Ready
 
 ---
 
 ## 🧠 Machine Learning Algorithms
 
+The following classification algorithms were implemented and evaluated:
+
 - Logistic Regression
-- Decision Tree
-- Random Forest ✅ (Best Model)
-- XGBoost
+- Decision Tree Classifier
+- Random Forest Classifier ✅ (Best Model)
+- XGBoost Classifier
 
 ---
 
@@ -38,134 +41,67 @@ The project automates the screening process by reducing manual effort and provid
 | Random Forest | **88.97%** |
 | XGBoost | - |
 
+The Random Forest Classifier achieved the best performance with an accuracy of **88.97%** and was selected as the final model for integration with the Flask web application.
+
 ---
 
 ## 📂 Dataset
 
+The project uses the following datasets:
+
 - Application Record Dataset
 - Credit Record Dataset
 
-Source:
-https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction
+**Dataset Source:** Kaggle Credit Card Approval Prediction Dataset
+
+---
+
+## 🔄 Project Workflow
+
+The complete project workflow consists of:
+
+1. Dataset Collection
+2. Data Understanding
+3. Exploratory Data Analysis
+4. Data Preprocessing
+5. Feature Engineering
+6. Handling Class Imbalance using SMOTE
+7. Machine Learning Model Training
+8. Model Evaluation and Comparison
+9. Best Model Selection
+10. Flask Web Application Integration
+11. Real-Time Prediction
+12. Result Display
 
 ---
 
 ## 🛠 Technologies Used
 
-Backend
+### Backend
+
 - Python
 - Flask
 
-Machine Learning
+### Machine Learning
+
 - Scikit-learn
 - XGBoost
 - Pandas
 - NumPy
 
-Frontend
+### Frontend
+
 - HTML5
 - CSS3
 - Bootstrap 5
 
+### Development Tools
+
+- Jupyter Notebook
+- Visual Studio Code
+- Git
+- GitHub
+
+---
+
 ## 📁 Project Structure
-
-```
-smart bridge/
-│
-├── Dataset/
-├── notebook/
-├── models/
-├── static/
-├── templates/
-├── app.py
-├── utils.py
-├── requirements.txt
-└── README.md
-```
-
----
-
-## ⚙️ Installation
-
-git clone <your-github-link>
-
-cd Credit-Card-Approval-Prediction-System
-
-pip install -r requirements.txt
-
-python app.py
-
-Run the application:
-
-```bash
-python app.py
-```
-
-Open:
-
-```
-http://127.0.0.1:5000
-```
-
----
-
-## 📈 Workflow
-
-User Input
-
-↓
-
-Data Preprocessing
-
-↓
-
-Feature Engineering
-
-↓
-
-Random Forest Model
-
-↓
-
-Prediction
-
-↓
-
-Result
-
-## 📊 Prediction Output
-
-The application predicts whether a credit card application is:
-
-- ✅ Approved
-- ❌ Rejected
-
-It also displays:
-
-- Approval Probability
-- Confidence Score
-- Applicant Summary
-
-## 🔮 Future Enhancements
-
-- Deep Learning-based prediction
-- Explainable AI (SHAP/LIME)
-- Real-time database integration
-- User authentication
-- Cloud deployment using IBM Cloud
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🔗 GitHub Repository
-
-https://github.com/Durga1607/Credit-Card-Approval-Prediction1
-
-## 👨‍💻 Developed By
-
-**Puduvitil Durga Pavan Kumar**
-
-B.Tech (Computer Science and Engineering)
-
-Shree Venkateswara College of Engineering & Technology

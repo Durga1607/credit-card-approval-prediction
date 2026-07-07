@@ -105,7 +105,7 @@ The complete project workflow consists of:
 ---
 
 ## 📁 Project Structure
-
+```text
 Credit_Card_Approval_Prediction_System/
 │
 ├── Dataset/
@@ -142,7 +142,7 @@ Credit_Card_Approval_Prediction_System/
 ├── requirements.txt
 ├── runtime.txt
 └── utils.py
-
+```
 ---
 
 ## ⚙️ Installation
@@ -278,4 +278,4 @@ https://github.com/Durga1607/credit-card-approval-prediction
 
 B.Tech - Computer Science and Engineering
 
-Shree Venkateswara College of Engineering & Technology
+Sri Venkateswara College of Engineering & Technology

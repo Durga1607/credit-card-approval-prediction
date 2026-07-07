@@ -112,15 +112,25 @@ http://127.0.0.1:5000
 ## 📈 Workflow
 
 User Input
+
 ↓
+
 Data Preprocessing
+
 ↓
+
 Feature Engineering
+
 ↓
+
 Random Forest Model
+
 ↓
+
 Prediction
+
 ↓
+
 Result
 
 ## 📊 Prediction Output

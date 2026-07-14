@@ -276,6 +276,6 @@ https://github.com/Durga1607/credit-card-approval-prediction
 
 **Puduvitil Durga Pavan Kumar**
 
-B.Tech - Computer Science and Engineering
+3**rd yearB.Tech - Computer Science and Engineering
 
 Sri Venkateswara College of Engineering & Technology
